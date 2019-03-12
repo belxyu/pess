@@ -15,7 +15,6 @@ header('Location: login.php');
 	{
 		die('Cannot connect to database:' .mysql_error());
 	}
-	
 	mysql_select_db("18_jezebel_pessdb",$con);
 	$result=mysql_query("SELECT * FROM incidenttype");
 	$incidentType;
